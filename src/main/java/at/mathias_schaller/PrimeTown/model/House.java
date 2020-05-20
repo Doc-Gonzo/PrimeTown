@@ -14,8 +14,6 @@ public class House extends AuditModel {
     private Long id;
 
     @NotNull
-    @Size
-    @Column(unique = true)
     private String owner;
 
     @NotNull
@@ -23,6 +21,7 @@ public class House extends AuditModel {
     private Integer yearOfConstruction;
 
     @NotNull
+    @Column(unique = true)
     private Integer number;
 
     // Getters and Setters (Omitted for brevity)
